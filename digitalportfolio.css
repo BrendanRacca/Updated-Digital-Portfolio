@@ -159,6 +159,93 @@ hr {
     font-size: 12;
 }
 
+    {
+    box-sizing: border-box
+}
+
+.mySlideshow {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.frames {
+    display: none;
+}
+
+.last,
+.new {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.last{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.new {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.last:hover,
+.new:hover {
+    background-color: white;
+}
+
+.subtitles {
+    color: white;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.circles {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #5c8a8a;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.activ, .circles:hover {
+    background-color: #5c8a8a;
+}
+
+.transition {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    
+}
+
 /*Page 3*/
 
 
