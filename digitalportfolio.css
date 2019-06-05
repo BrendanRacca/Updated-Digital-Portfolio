@@ -145,9 +145,6 @@ hr {
 /*page 2*/
 
 
-
-
-
 .parallax2 {
     background-image: url(Images/placeholder1.jpg);
     height: 100%;
@@ -164,12 +161,12 @@ hr {
 }
 
 .mySlideshow {
-    max-width: 100%;
+    max-width: 1000px;
     position: relative;
     margin: auto;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .frames {
@@ -191,7 +188,7 @@ hr {
     user-select: none;
 }
 
-.last{
+.last {
     left: 0;
     border-radius: 3px 0 0 3px;
 }
@@ -206,9 +203,13 @@ hr {
     background-color: white;
 }
 
+.watched {
+    padding: 8px, 12px;
+}
+
 .subtitles {
     color: white;
-    padding: 8px 12px;
+    padding: 12px 18px;
     position: absolute;
     top: 0;
 }
@@ -224,7 +225,8 @@ hr {
     transition: background-color 0.6s ease;
 }
 
-.activ, .circles:hover {
+.activ,
+.circles:hover {
     background-color: #5c8a8a;
 }
 
@@ -236,19 +238,43 @@ hr {
 }
 
 @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-    
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+
 }
 
 /*Page 3*/
 
+.letters {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
 
+.a {
+    justify-content: center;
+    bottom: 0;
+}
+
+.b {
+    justify-content: center;
+    bottom: 0;
+}
 
 /*Page 4*/
 
@@ -266,11 +292,611 @@ hr {
 }
 
 .container {
-    background-color: #333;
+
     bottom: 0;
 }
 
 /*Tablet Size*/
 
+@media screen and (max-width:1024px) {
+    
+    /*Page 1*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: 'Slabo 27px', serif;
+}
+
+
+.navbar a {
+    align-content: flex-start;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.dropdown {
+    align-content: flex-end;
+    overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #5c8a8a;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    display: flex;
+    flex: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body {
+    background-size: cover;
+    font-family: 'Slabo 27px', serif;
+    color: white;
+    background-color: #800000;
+}
+
+p {
+    width: 750px
+}
+
+a {
+    color: #5c8a8a;
+}
+
+hr {
+    max-width: 100%;
+    width: 100%;
+}
+
+
+.parallax {
+    background-image: url(Images/ambient.jpg);
+    height: 100%;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    background-color: white;
+}
+
+.start {
+    display: block;
+    flex-direction: column;
+}
+
+.flexbox2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.image1 {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+.flexbox3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.ParallaxContinued {
+    background-image: url(Images/ambient.jpg);
+    height: 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    background-color: white;
+}
+
+    /*page 2*/
+
+
+    .parallax2 {
+        background-image: url(Images/placeholder1.jpg);
+        height: 100%;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: white;
+        font-size: 12;
+    }
+
+        {
+        box-sizing: border-box
+    }
+
+    .mySlideshow {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .frames {
+        display: none;
+    }
+
+    .last,
+    .new {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .last {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .new {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .last:hover,
+    .new:hover {
+        background-color: white;
+    }
+
+    .watched {
+        padding: 8px, 12px;
+    }
+
+    .subtitles {
+        color: white;
+        padding: 12px 18px;
+        position: absolute;
+        top: 0;
+    }
+
+    .circles {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #5c8a8a;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .activ,
+    .circles:hover {
+        background-color: #5c8a8a;
+    }
+
+    .transition {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+
+    }
+
+    /*Page 3*/
+
+    .letters {
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+    }
+
+    .a {
+        justify-content: center;
+        bottom: 0;
+    }
+
+    .b {
+        justify-content: center;
+        bottom: 0;
+    }
+
+    /*Page 4*/
+
+
+
+    .parallax4 {
+        background-image: url(Images/placeholder1.jpg);
+        height: 100%;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: white;
+        font-size: 12;
+    }
+
+    .container {
+
+        bottom: 0;
+    }
+}
 
 /*Phone Size*/
+@media screen and (max-width:480px) {
+    
+    /*Page 1*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: 'Slabo 27px', serif;
+}
+
+
+.navbar a {
+    align-content: flex-start;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.dropdown {
+    align-content: flex-end;
+    overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #5c8a8a;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    display: flex;
+    flex: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body {
+    background-size: cover;
+    font-family: 'Slabo 27px', serif;
+    color: white;
+    background-color: #800000;
+}
+
+p {
+    width: 750px
+}
+
+a {
+    color: #5c8a8a;
+}
+
+hr {
+    max-width: 100%;
+    width: 100%;
+}
+
+
+.parallax {
+    background-image: url(Images/ambient.jpg);
+    height: 100%;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    background-color: white;
+}
+
+.start {
+    display: block;
+    flex-direction: column;
+}
+
+.flexbox2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.image1 {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+.flexbox3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.ParallaxContinued {
+    background-image: url(Images/ambient.jpg);
+    height: 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    background-color: white;
+}
+
+    /*page 2*/
+
+
+    .parallax2 {
+        background-image: url(Images/placeholder1.jpg);
+        height: 100%;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: white;
+        font-size: 12;
+    }
+
+        {
+        box-sizing: border-box
+    }
+
+    .mySlideshow {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .frames {
+        display: none;
+    }
+
+    .last,
+    .new {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .last {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .new {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .last:hover,
+    .new:hover {
+        background-color: white;
+    }
+
+    .watched {
+        padding: 8px, 12px;
+    }
+
+    .subtitles {
+        color: white;
+        padding: 12px 18px;
+        position: absolute;
+        top: 0;
+    }
+
+    .circles {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #5c8a8a;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .activ,
+    .circles:hover {
+        background-color: #5c8a8a;
+    }
+
+    .transition {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+
+    }
+
+    /*Page 3*/
+
+    .letters {
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+    }
+
+    .a {
+        justify-content: center;
+        bottom: 0;
+    }
+
+    .b {
+        justify-content: center;
+        bottom: 0;
+    }
+
+    /*Page 4*/
+
+
+
+    .parallax4 {
+        background-image: url(Images/placeholder1.jpg);
+        height: 100%;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: white;
+        font-size: 12;
+    }
+
+    .container {
+
+        bottom: 0;
+    }
+}
